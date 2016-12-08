@@ -13,5 +13,8 @@ adb -d pull /sdcard/key
 echo Files copied
 adb -d shell "rm /sdcard/msgstore.db /sdcard/wa.db /sdcard/key"
 
+cp msgstore.db ../../whatsapp/src/main/resources/msgstore.db
+cp wa.db ../../whatsapp/src/main/resources/wa.db
+
 adb kill-server
 
